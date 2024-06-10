@@ -14,8 +14,8 @@ function App() {
             <h1 className={styles.projectName}>NEWS AGGREGATION APP</h1>
             <h2 className={styles.projectAbstract}>
               The app allows you to aggregate news from various sources and
-              share them within your Rocket Chat instance. Its 
-              benefits would be:
+              share them within your Rocket Chat instance. Its benefits would
+              be:
             </h2>
 
             <ol className={styles.alternatingColors}>
