@@ -73,6 +73,9 @@ const StormySeas = {
 
   variants: {
     MessageHeader: "Colorize",
+    UserInformation: {
+      viewType: "Popup",
+    },
   },
 
   components: {
@@ -80,7 +83,6 @@ const StormySeas = {
       configOverrides: {
         optionConfig: {
           chatOptions: ["minmax"],
-
           threshold: 1,
         },
       },
