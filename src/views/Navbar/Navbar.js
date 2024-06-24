@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./Navbar.module.css";
+import navbarData from "../../data/navbarData.json";
 import logo from "../../assets/header_logo.svg";
 import githubLogo from "../../assets/github-mark.svg";
+
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
@@ -10,20 +12,18 @@ const Navbar = () => {
       </div>
 
       <div className={styles.navLinkContainer}>
-        <a
-          className={styles.navLink}
-          href="https://github.com/Spiral-Memory/News-Aggregation"
-        >
-          <span>
-            View Source <img src={githubLogo} alt="github_logo" />
-          </span>
-        </a>
-        <a className={styles.navLink} href="https://github.com/Spiral-Memory">
-          About me
-        </a>
+        {navbarData.links.map((link, index) => (
+          <a key={index} className={styles.navLink} href={link.href}>
+            <span>
+              {link.text}{" "}
+              {link.imgAlt && <img src={githubLogo} alt={link.imgAlt} />}
+            </span>
+          </a>
+        ))}
       </div>
     </div>
   );
 };
 
 export default Navbar;
+
