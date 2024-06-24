@@ -2,7 +2,7 @@ import { EmbeddedChat } from "ec-test";
 import StormySeas from "../../theme/StormySeas";
 import styles from "./EmbeddedChat.module.css";
 
-const ECComponent = () => {
+const ECComponent = ({ isEcOpen, setIsECOpen }) => {
   return (
     <div className={styles.ecContainer}>
       <EmbeddedChat
@@ -17,6 +17,10 @@ const ECComponent = () => {
           credentials: {
             resume: "czWwA8NzkBkch7lzl3G-yc6Pm5Gqco9PBf-mu4CyLqk",
           },
+        }}
+        isClosable={true}
+        setClosableState={() => {
+          isEcOpen && setIsECOpen((prev) => !prev);
         }}
       />
     </div>

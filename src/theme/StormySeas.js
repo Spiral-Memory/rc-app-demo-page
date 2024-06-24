@@ -82,8 +82,8 @@ const StormySeas = {
     ChatHeader: {
       configOverrides: {
         optionConfig: {
-          chatOptions: ["minmax"],
-          threshold: 1,
+          chatOptions: ["minmax", "close"],
+          threshold: 2,
         },
       },
     },

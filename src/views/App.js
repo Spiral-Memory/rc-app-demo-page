@@ -46,7 +46,9 @@ function App() {
           </div>
         </div>
       </div>
-      {isEcOpen && <ECComponent />}
+      {isEcOpen && (
+        <ECComponent isEcOpen={isEcOpen} setIsECOpen={setIsECOpen} />
+      )}
     </div>
   );
 }
