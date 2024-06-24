@@ -10,8 +10,8 @@ const ECComponent = ({ isEcOpen, setIsECOpen }) => {
         roomId="6679b390ef5048f098b06d48"
         anonymousMode
         theme={StormySeas}
-        height="75vh"
-        width="48vw"
+        height="85vh"
+        width="55vw"
         auth={{
           flow: "TOKEN",
           credentials: {
