@@ -7,6 +7,7 @@ const ECComponent = () => {
     <div className={styles.ecContainer}>
       <EmbeddedChat
         host="https://spiral-memory.rocket.chat"
+        roomId="6679b390ef5048f098b06d48"
         anonymousMode
         theme={StormySeas}
         height="75vh"
