@@ -12,6 +12,12 @@ const ECComponent = () => {
         theme={StormySeas}
         height="75vh"
         width="48vw"
+        auth={{
+          flow: "TOKEN",
+          credentials: {
+            resume: "czWwA8NzkBkch7lzl3G-yc6Pm5Gqco9PBf-mu4CyLqk",
+          },
+        }}
       />
     </div>
   );
