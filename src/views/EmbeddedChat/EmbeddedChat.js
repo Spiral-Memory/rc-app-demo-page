@@ -15,7 +15,7 @@ const ECComponent = ({ isEcOpen, setIsECOpen }) => {
         auth={{
           flow: "TOKEN",
           credentials: {
-            resume: "Pvjmwrv5DTr6yIA4bT4LhtDR86eQ08yIwWyePTpmhqR",
+            resume: "RXINgch72chNT_3WRyXWeUJXR9phnUQdP5RVyVvicvd",
           },
         }}
         isClosable={true}
