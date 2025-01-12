@@ -134,6 +134,24 @@ const StormySeas = {
     FileGallery: {
       viewType: "Popup",
     },
+
+    Members:{
+      viewType: "Popup",
+    },
+
+    SearchMessages:{
+      viewType: "Popup",
+    },
+
+    RoomMember:{
+      viewType: "Popup",
+    },
+
+    UserInformation:{
+      viewType: "Popup",
+    }
+
+
   },
 
   components: {
