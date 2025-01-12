@@ -1,4 +1,4 @@
-import { EmbeddedChat } from "ec-test";
+import { EmbeddedChat } from "ec-test-react";
 import StormySeas from "../../theme/StormySeas";
 import styles from "./EmbeddedChat.module.css";
 

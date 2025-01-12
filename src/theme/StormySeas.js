@@ -1,20 +1,12 @@
 const StormySeas = {
+  radius: "0.2rem",
+
+  commonColors: {
+    black: "hsl(0, 100%, 0%)",
+    white: "hsl(0, 100%, 100%)",
+  },
+
   schemes: {
-    radius: "0.2rem",
-    contrastParams: {
-      light: {
-        saturation: 70,
-        luminance: 19,
-      },
-      dark: {
-        saturation: 88,
-        luminance: 77,
-      },
-    },
-    common: {
-      black: "hsl(0, 100%, 0%)",
-      white: "hsl(0, 100%, 100%)",
-    },
     light: {
       background: "hsl(0, 0%, 100%)",
       foreground: "hsl(222.2, 84%, 4.9%)",
@@ -71,9 +63,75 @@ const StormySeas = {
     },
   },
 
+  contrastParams: {
+    light: {
+      saturation: 70,
+      luminance: 19,
+    },
+    dark: {
+      saturation: 88,
+      luminance: 77,
+    },
+  },
+
+  typography: {
+    default: {
+      fontFamily: "'Times New Roman', serif",
+      fontSize: 14,
+      fontWeightLight: 300,
+      fontWeightRegular: 400,
+      fontWeightMedium: 500,
+      fontWeightBold: 700,
+    },
+    h1: {
+      fontSize: "2.625rem",
+      fontWeight: 800,
+    },
+    h2: {
+      fontSize: "1.875rem",
+      fontWeight: 800,
+    },
+    h3: {
+      fontSize: "1.5rem",
+      fontWeight: 400,
+    },
+    h4: {
+      fontSize: "1.25rem",
+      fontWeight: 400,
+    },
+    h5: {
+      fontSize: "1rem",
+      fontWeight: 400,
+    },
+    h6: {
+      fontSize: "0.875rem",
+      fontWeight: 500,
+    },
+  },
+
+  shadows: [
+    "none",
+    "rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px",
+    "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+  ],
+
   variants: {
-    MessageHeader: "Colorize",
-    UserInformation: {
+    MessageHeader: "colorize",
+    PinnedMessages: {
+      viewType: "Popup",
+    },
+    ThreadedMessages: {
+      viewType: "Popup",
+    },
+
+    MentionedMessages: {
+      viewType: "Popup",
+    },
+    StarredMessages: {
+      viewType: "Popup",
+    },
+
+    FileGallery: {
       viewType: "Popup",
     },
   },
@@ -82,57 +140,21 @@ const StormySeas = {
     ChatHeader: {
       configOverrides: {
         optionConfig: {
-          chatOptions: ["minmax", "close"],
-          threshold: 2,
+          surfaceItems: ["minmax", "close"],
+          menuItems: [
+            "thread",
+            "mentions",
+            "starred",
+            "pinned",
+            "files",
+            "members",
+            "search",
+            "rInfo",
+            "logout",
+          ],
         },
       },
     },
-  },
-
-  typography: {
-    default: {
-      fontFamily: "'Times New Roman', serif",
-      fontSize: 16,
-      fontWeightRegular: 400,
-    },
-    h1: {
-      fontSize: "2rem",
-      fontWeight: 800,
-    },
-    h2: {
-      fontSize: "1.5rem",
-      fontWeight: 800,
-    },
-    h3: {
-      fontSize: "1.3rem",
-      fontWeight: 400,
-    },
-    h4: {
-      fontSize: "1rem",
-      fontWeight: 400,
-    },
-    h5: {
-      fontSize: "0.83rem",
-      fontWeight: 400,
-    },
-    h6: {
-      fontSize: "0.67rem",
-      fontWeight: 500,
-    },
-  },
-  shadows: [
-    "none",
-    "rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px",
-    "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-  ],
-  zIndex: {
-    divider: 1000,
-    body: 1100,
-    general: 1200,
-    menu: 1300,
-    tooltip: 1400,
-    modal: 1500,
-    toastbar: 1600,
   },
 };
 export default StormySeas;
