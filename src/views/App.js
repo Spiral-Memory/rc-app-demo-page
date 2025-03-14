@@ -30,7 +30,7 @@ function App() {
                 className={styles.tryBtn}
                 onClick={() => setIsECOpen((prev) => !prev)}
               >
-                {isEcOpen ? "Close" : "Try!"}
+                {isEcOpen ? "Close it" : "Try!"}
               </button>
             </div>
           </div>
